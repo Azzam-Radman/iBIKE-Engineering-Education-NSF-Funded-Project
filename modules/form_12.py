@@ -1,5 +1,6 @@
+import streamlit as st
+
 def render():
-    import streamlit as st
 
     #radio1
     st.markdown(
@@ -155,4 +156,3 @@ def render():
         "1.Concept, 2. Development, 3. Prototype, 4. Manufacture, 5. Launch, 6. Distribution"
     ]
     selected_option_q39 = st.radio("", options_q39)
-    render()
