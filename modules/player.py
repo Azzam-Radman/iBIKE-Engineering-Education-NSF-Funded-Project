@@ -65,19 +65,18 @@ def display_group_buttons():
             st.button(f"{groups[i]}", on_click=group_assign, args=(groups[i], ))
 		
 def display_role_page():
-
-    if st.button('I would like to take the survey'):
-	survey.main_form()
-    if ss.role == 'Project Manager':
-        pr_m.render()
-    elif ss.role == 'Design Engineer':
-        d_e.render()
-    elif ss.role == 'Mechanical Engineer':
-        m_e.render()
-    elif ss.role == 'Industrial Engineer':
-        i_e.render()
-    elif ss.role == 'Purchasing Manager':
-        pu_m.render()
+	if st.button('I would like to take the survey'):
+		survey.main_form()
+	if ss.role == 'Project Manager':
+		pr_m.render()
+	elif ss.role == 'Design Engineer':
+		d_e.render()
+	elif ss.role == 'Mechanical Engineer':
+		m_e.render()
+	elif ss.role == 'Industrial Engineer':
+		i_e.render()
+	elif ss.role == 'Purchasing Manager':
+		pu_m.render()
 
   
 def display_feedback_page():
