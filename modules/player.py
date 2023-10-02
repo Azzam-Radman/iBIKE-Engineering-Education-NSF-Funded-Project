@@ -4,7 +4,7 @@ from modules import game, group
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-from modules import Project_Manager as pr_m, Design_Engineer as d_e, Mechanical_Engineer as m_e, Industrial_Engineer as i_e, Purchasing_Manager as pu_m
+from modules import Project_Manager as pr_m, Design_Engineer as d_e, Mechanical_Engineer as m_e, Industrial_Engineer as i_e, Purchasing_Manager as pu_m, mainform as survey
 
 def render():
 	if 'setup_complete' not in ss:
@@ -66,6 +66,8 @@ def display_group_buttons():
 		
 def display_role_page():
 
+    if st.button('I would like to take the survey'):
+	survey.main_form()
     if ss.role == 'Project Manager':
         pr_m.render()
     elif ss.role == 'Design Engineer':
