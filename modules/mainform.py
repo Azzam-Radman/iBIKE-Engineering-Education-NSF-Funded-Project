@@ -1,22 +1,22 @@
-import streamlit as st
-
-# Import your form modules
-from modules import form_0
-from modules import form_1
-from modules import form_2
-from modules import form_3
-from modules import form_4
-from modules import form_5
-from modules import form_6
-from modules import form_7
-from modules import form_8
-from modules import form_9
-from modules import form_10
-from modules import form_11
-from modules import form_12
-from modules import form_13
-
 def main_form():
+    import streamlit as st
+
+    # Import your form modules
+    from modules import form_0
+    from modules import form_1
+    from modules import form_2
+    from modules import form_3
+    from modules import form_4
+    from modules import form_5
+    from modules import form_6
+    from modules import form_7
+    from modules import form_8
+    from modules import form_9
+    from modules import form_10
+    from modules import form_11
+    from modules import form_12
+    from modules import form_13
+    
     # Check if "page_index" exists in session state, and initialize it to 0 if not present
     if "page_index" not in st.session_state:
         st.session_state.page_index = 0
