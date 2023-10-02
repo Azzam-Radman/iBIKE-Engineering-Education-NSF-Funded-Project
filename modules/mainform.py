@@ -57,5 +57,5 @@ def main_form():
 # Streamlit app title
 st.title("Form Navigation")
 
-# Call the main_form() function when the Streamlit app is run
-main_form()
+# # Call the main_form() function when the Streamlit app is run
+# main_form()
