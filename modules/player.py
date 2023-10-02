@@ -65,8 +65,6 @@ def display_group_buttons():
             st.button(f"{groups[i]}", on_click=group_assign, args=(groups[i], ))
 		
 def display_role_page():
-	if st.button('I would like to take the survey'):
-		survey.main_form()
 	if ss.role == 'Project Manager':
 		pr_m.render()
 	elif ss.role == 'Design Engineer':
@@ -180,6 +178,8 @@ def init():
 			st.write('On this page, you will choose your group and role.')
 			st.text_input('What is your name?', key='name_input' , on_change=name_assign)
 	elif not ss.group:
+		if st.button('I would like to take the survey'):
+			survey.main_form()
 		st.write(f"Hello, {ss.name}! Please select one of the available groups below:")
 		display_group_buttons()
 
