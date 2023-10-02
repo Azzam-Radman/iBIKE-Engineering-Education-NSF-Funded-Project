@@ -1,5 +1,6 @@
+import streamlit as st
+
 def render():
-    import streamlit as st
     # Section 1: Check-in Part 3
     st.markdown(
     """
@@ -144,4 +145,3 @@ def render():
     ]
 
     selected_option_q4 = st.radio("", options_q4)
-    render()
