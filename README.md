@@ -35,7 +35,7 @@ The **iBIKE** (Intelligent Bicycles for Interdisciplinary Knowledge and Engineer
 - Data Science Libraries: `pandas`, `matplotlib`, `scikit-learn`
 
 ## 📁 Repository Structure
-
+```
 iBIKE-Engineering-Education/
 │
 ├── data/ # Raw and processed sensor datasets
@@ -44,7 +44,7 @@ iBIKE-Engineering-Education/
 ├── figures/ # Visuals used in presentations and documentation
 ├── reports/ # Progress reports, technical documentation
 └── README.md # Project overview
-
+```
 
 ## 🎯 Learning Objectives
 
